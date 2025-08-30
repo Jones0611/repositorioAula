@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - João</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -43,24 +47,24 @@
             </div>
         </div>
         <h1 id="contatos">Contatos</h1>
-    </main>
-    <footer>
         <div class="rodape">
-            <div>
+            <div class="imagemRodape">
                 <p>Acesse meu zapzap</p>
-                <img src="img/download (4).jpg" alt="ZAPZAP">
+                <a href="https://wa.me/5511998620602" target="_blank"><img src="img/download (4).jpg" alt="ZAPZAP"></a>
             </div>
-            <div>
+            <div class="formulario">
                 <p>Mande uma mensagem</p>
                 <input type="text" placeholder="Digite o seu nome">
                 <br>
                 <input type="email" placeholder="Digite seu e-mail">
                 <br>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
                 <br>
-                <button>Enviar</button>
+                <button onclick="envia()">Enviar</button>
             </div>
         </div>
+    </main>
+    <footer>
         <p>&copy; Direitos reservados - João</p>
     </footer>
     <script src="script.js"></script>
